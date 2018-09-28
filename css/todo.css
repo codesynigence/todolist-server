@@ -20,6 +20,11 @@
     padding: 15px;
 }
 
+#refresh {
+    float: right;
+    margin-left: auto;
+}
+
 input[type=search],
 select {
     color: black;
