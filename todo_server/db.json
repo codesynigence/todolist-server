@@ -3,19 +3,19 @@
     {
       "title": "Test",
       "desc": "Demo task",
-      "status": false,
+      "status": true,
       "id": "1537959460999"
     },
     {
       "title": "Wake Me Up",
       "desc": "At 7 Am",
-      "status": true,
+      "status": false,
       "id": "1538048975080"
     },
     {
       "title": "Meeting",
       "desc": "On 27th September",
-      "status": true,
+      "status": false,
       "id": "1538049441623"
     },
     {
@@ -27,26 +27,32 @@
     {
       "title": "Flight",
       "desc": "At 6 am",
-      "status": false,
+      "status": true,
       "id": "1538050511725"
     },
     {
       "title": "Remainder",
       "desc": "Remaind at 4 pm",
-      "status": false,
+      "status": true,
       "id": "1538068253208"
     },
     {
       "title": "adasd",
       "desc": "dsasdasd",
-      "status": false,
+      "status": true,
       "id": "1538117728448"
     },
     {
       "title": "House Rent",
       "desc": "Due date tomorrow",
-      "status": false,
+      "status": true,
       "id": "1538118423689"
+    },
+    {
+      "title": "Alarm",
+      "desc": "New Alarm",
+      "status": true,
+      "id": "1538128537706"
     }
   ]
 }

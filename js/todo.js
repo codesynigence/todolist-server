@@ -1,7 +1,22 @@
 var st;
 getData();
 
-// Search in databse to get reuired string
+//Get all data from db
+function getData() {
+    axios.get("http://127.0.0.1:3000/allTasks")
+        .then(function(response) {
+            addT(response.data)
+        })
+        .catch(function(error) {
+            // handle error
+            console.log(error);
+        })
+        .then(function() {
+            // always executed
+        });
+}
+
+// Search in databse to get reqquired string
 function searchfunc() {
     var input, filter;
     input = document.getElementById("myInput");
@@ -29,14 +44,11 @@ function searchfunc() {
         });
 }
 
-
-
 // Add Elements and data to list
 function addT(details) {
     $("#demo").empty();
     details.forEach(todofunc);
 }
-
 
 function todofunc(taskData) {
     var newElement1 = document.createElement('li');
@@ -46,8 +58,6 @@ function todofunc(taskData) {
     newETitle.innerHTML = taskData.title;
     newETitle.className = 'fontbold';
     newElement1.appendChild(newETitle);
-
-
 
     var newEc = document.createElement('input');
     newEc.className = 'cb';
@@ -89,37 +99,10 @@ function todofunc(taskData) {
             });
 
     })
-
-
-
-
 }
-
-
-function getData() {
-    axios.get("http://127.0.0.1:3000/allTasks")
-        .then(function(response) {
-            // handle success
-            // console.log(response.data);
-            addT(response.data)
-        })
-        .catch(function(error) {
-            // handle error
-            console.log(error);
-        })
-        .then(function() {
-            // always executed
-        });
-}
-
-
-
-
 
 $('#pend').click(function() {
-    console.log('hii');
-
-
+    //console.log('hii');
     axios.get("http://127.0.0.1:3000/allTasks")
         .then(function(response) {
             // handle success

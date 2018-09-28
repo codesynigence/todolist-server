@@ -4,6 +4,7 @@
     align-items: center;
     padding-top: 3%;
     color: white;
+    font-family: cursive;
 }
 
 .list {
@@ -34,12 +35,17 @@ select {
 }
 
 .item>span>h3 {
-    text-decoration: underline;
+    text-decoration: underline dashed white;
+    font-family: cursive;
+}
+
+#demo {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 ul {
     list-style-type: decimal;
-    height: 400px;
+    height: 409px;
     overflow-x: hidden;
     overflow-y: scroll;
 }
