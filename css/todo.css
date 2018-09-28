@@ -1,0 +1,72 @@
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 3%;
+    color: white;
+}
+
+.list {
+    border: 25px solid black;
+    border-radius: 10px;
+    background-color: rgb(42, 100, 122);
+    border-color: lightsteelblue;
+    width: 40%;
+}
+
+.flex-container>div {
+    float: left;
+    padding: 15px;
+}
+
+input[type=search],
+select {
+    color: black;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+.item>span>h3 {
+    text-decoration: underline;
+}
+
+ul {
+    list-style-type: decimal;
+    height: 400px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+#linethrough {
+    text-decoration: line-through;
+}
+
+.fontbold {
+    font-weight: bolder;
+}
+
+#taskbutton>div {
+    float: left;
+    width: 50%;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cb {
+    float: right;
+}
+
+input[type=checkbox] {
+    zoom: 2.0;
+}
