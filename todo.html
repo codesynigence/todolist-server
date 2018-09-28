@@ -50,28 +50,35 @@
 
                     let d1 = document.getElementById('swal-input1').value;
                     let d2 = document.getElementById('swal-input2').value;
-                    let d3 = {
-                        "title": d1,
-                        "desc": d2,
-                        "status": false
+                    if (d1 != "" || d2 != "") {
+
+
+                        let d3 = {
+                            "title": d1,
+                            "desc": d2,
+                            "status": false
+                        }
+
+
+                        axios.post("http://127.0.0.1:3000/addTask",
+                                d3
+                            )
+                            .then(function(response) {
+                                console.log(response);
+                                // d.push(response.data);
+                                // addT(d);
+                                getData()
+
+                            })
+                            .catch(function(error) {
+                                console.log(error);
+                            });
+
+                    } else {
+                        alert("Please Enter Input in both the fields");
+                        // getFormValues.preventDefault();
+                        // swal('Please Enter Input in both the fields');
                     }
-
-                    axios.post("http://127.0.0.1:3000/addTask",
-                            d3
-                        )
-                        .then(function(response) {
-                            console.log(response);
-                            // d.push(response.data);
-                            // addT(d);
-                            getData()
-
-                        })
-                        .catch(function(error) {
-                            console.log(error);
-                        });
-
-
-
 
 
 
